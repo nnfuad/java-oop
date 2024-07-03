@@ -32,7 +32,7 @@ public class constructor2{
         Scanner sc = new Scanner(System.in);
         
         //Student s1 = new Student(); //because we have a custom constructor, to have it we need to build or write the code of custom constructor ourselves
-        //now it will, cuz we added publlic student(){}
+        //now it will, cuz we added publlic student(){} // **Thats not same as overloading...MUY IMPOTANTE**
         Student s1 = new Student();
         //we can also use:
         Student s2 = new Student(sc.nextLine(),sc.nextInt());
