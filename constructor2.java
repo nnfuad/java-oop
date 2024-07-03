@@ -35,9 +35,10 @@ public class constructor2{
         //now it will, cuz we added publlic student(){}
         Student s1 = new Student();
         //we can also use:
-        Student s2 = new Student("Nafis", 32);
+        Student s2 = new Student(sc.nextLine(),sc.nextInt());
         //no need to write all the codes below for s2, just s1, cuz we called it with defcons...
         System.out.println("Enter Student's name");
+        sc.nextLine();// when the previous input was an integer there was a buffer nextline input for the enter you pressed therrefore add a nextLine for the funtion to work properly...
         s1.setName(sc.nextLine());
         System.out.println("Enter Student's roll");
         s1.setRoll(sc.nextInt());
