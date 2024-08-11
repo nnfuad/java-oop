@@ -109,6 +109,27 @@ public class SignupOne extends JFrame{
         marital.setBounds(100,390,200,30);
         add(marital);
 
+        JRadioButton married = new JRadioButton("Married");
+        married.setBounds(300,390,100,30);
+        married.setForeground(Color.WHITE);
+        married.setBackground(Color.LIGHT_GRAY);
+        add(married);
+        JRadioButton unmarried = new JRadioButton("Unmarried");
+        unmarried.setBounds(450,390,100,30);
+        unmarried.setBackground(Color.LIGHT_GRAY);
+        unmarried.setForeground(Color.WHITE);
+        add(unmarried);
+        JRadioButton other = new JRadioButton("Other");
+        other.setBounds(630,390,500,30);
+        other.setBackground(Color.LIGHT_GRAY);
+        other.setForeground(Color.WHITE);
+        add(other);
+
+        ButtonGroup marriageGroup = new ButtonGroup();
+        marriageGroup.add(married);
+        marriageGroup.add(unmarried);
+        marriageGroup.add(other);
+
         JLabel address = new JLabel("Address:");
         address.setForeground(Color.WHITE);
         address.setFont(new Font("Raleway",Font.BOLD,20));
@@ -156,6 +177,13 @@ public class SignupOne extends JFrame{
         pcodeField.setBounds(300,590,400,30);
         pcodeField.setBackground(Color.lightGray);
         add(pcodeField);
+
+        JButton next = new JButton("Next");
+        next.setFont(new Font( "Raleway",Font.BOLD,14));
+        next.setBackground(Color.white);
+        next.setForeground(Color.BLACK);
+        next.setBounds(620,660,80,30);
+        add(next);
 
         getContentPane().setBackground(Color.DARK_GRAY);
         
