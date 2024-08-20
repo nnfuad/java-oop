@@ -1,3 +1,5 @@
+//super calls the constructor of the parent class
+//this calls the constructor of current class
 class A // automatically extends Object class
 {
     public A(){
